@@ -459,5 +459,11 @@ namespace DirectorioServicios
                 ScriptManager.RegisterStartupScript(this, typeof(string), "MensajeRetorno", vgc_Script, true);
             }
         }
+
+        protected void lnkCerrarSesion_Click(object sender, EventArgs e)
+        {
+            Session.Remove("ID_USUARIO_SESION");
+            Response.Redirect("index.aspx");
+        }
     }
 }

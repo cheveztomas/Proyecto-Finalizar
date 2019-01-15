@@ -12,7 +12,8 @@
             <div id="contenedor" class="DivSesion">
 &nbsp;&nbsp;
             
-&nbsp;<br />
+&nbsp;<asp:LinkButton ID="lnkCerrarSesion" runat="server" OnClick="lnkCerrarSesion_Click">Cerrar Sesión</asp:LinkButton>
+                <br />
             <div id="form" runat="server">
                 <h2 class="text-info">Perfil Profesional</h2>
                 <asp:Label ID="lblNombre" runat="server" Text="Nombre:"></asp:Label>
