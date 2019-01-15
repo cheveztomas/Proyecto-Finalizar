@@ -112,7 +112,7 @@ namespace DirectorioServicios
                 contenedor.InnerHtml += titulo;
                 foreach (DataRow item in lista_Websites.Rows)
                 {
-                    wsites += "<a href=" + item["URL_SITIO"].ToString() + ">" + item["NOMBRE_SITIO"].ToString() + "</a><br>";
+                    wsites += "<a target='_blank' href=http://" + item["URL_SITIO"].ToString() + ">" + item["NOMBRE_SITIO"].ToString() + "</a><br>";
                 }
                 //<----------------------- SITIOS WEB
 
