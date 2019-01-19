@@ -56,7 +56,7 @@
             </div>
             <div class="form-group">
                 <label for="exampleDropdownFormEmail1">¿Acerca de mi?</label>
-                <asp:TextBox ID="Txt_Descipcion" runat="server" class="form-control" MaxLength="200" ValidationGroup="Registrar"></asp:TextBox>
+                <asp:TextBox ID="Txt_Descipcion" runat="server" class="form-control" MaxLength="200" ValidationGroup="Registrar" TextMode="MultiLine"></asp:TextBox>
                 <asp:RegularExpressionValidator ID="RegularExpressionValidator4" runat="server" ControlToValidate="Txt_Descipcion" ErrorMessage="* Solo se permiten 200 carácteres." ForeColor="Red" ValidationExpression="^[\s\S]{0,200}$" ValidationGroup="Registrarse"></asp:RegularExpressionValidator>
             </div>
 
